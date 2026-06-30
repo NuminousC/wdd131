@@ -4,5 +4,32 @@
 }
 
 body {
+  display: grid;
+  grid-template: auto 1fr auto / 1fr minmax(150px, 25%);
 background-color: aliceblue;
+height: 100vh;
+}
+
+header {
+  grid-column: 1 / 4;
+  background-color: cadetblue;
+}
+
+ul{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+footer {
+  grid-column: 1 / 4;
+  background-color: cadetblue;
+}
+
+main {
+  background-color: pink;
+}
+article {
+  background-color: rgb(195, 75, 95);
 }
