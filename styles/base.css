@@ -14,7 +14,7 @@ body {
 h1 {
   font-weight: 400;
   text-align: center;
-  padding: 1.5rem;
+  padding: 1.2rem;
   font-size: 2.25rem;
   letter-spacing: 2px;
 }
@@ -68,13 +68,41 @@ ul li:hover {
   display: grid;
   grid-template-columns: auto minmax(200px, 30%);
   column-gap: 15px;
+  height: 75%;
+  width: 93%;
+  margin: 0 auto;
 }
 
 .card {
   border: 2px solid black;
-  height: auto;
+  border-radius: 10px;
 }
 
 section h2 {
   text-align: center;
+  background-color: darkslateblue;
+  color: aliceblue;
+  padding: 0.8rem;
+}
+
+footer {
+  background-color: darkslateblue;
+  color: aliceblue;
+  text-align: center;
+  padding: 1rem;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+.inner-flex {
+  display: flex;
+}
+
+.inner-flex img {
+  width: 150px;
+  height: 100%;
+}
+
+#lastModified {
+  margin-top: 0.3rem;
 }

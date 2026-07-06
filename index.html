@@ -16,6 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap"
       rel="stylesheet"
     />
+    <script src="scipts/getdates.js" defer></script>
   </head>
   <body>
     <header>
@@ -23,7 +24,7 @@
       <nav>
         <ul>
           <li><a href="">LinkedIn</a></li>
-          <li><a href="">Canvas</a></li>
+          <li><a href="https://byupw.instructure.com/">Canvas</a></li>
           <li><a href="">Top Scripture</a></li>
           <li><a href="">Project</a></li>
         </ul>
@@ -34,19 +35,25 @@
       <div class="card-grid">
         <section class="card">
           <h2>About Me</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-            vero quia praesentium neque quibusdam quisquam ab dolores asperiores
-            minus quos eaque culpa, animi inventore quidem perspiciatis
-            excepturi quas consectetur cum!
-          </p>
+          <div class="inner-flex">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+              vero quia praesentium neque quibusdam quisquam ab dolores
+              asperiores minus quos eaque culpa, animi inventore quidem
+              perspiciatis excepturi quas consectetur cum!
+            </p>
+            <img
+              src="images/portrait-rowland-duru.jpeg"
+              alt="profile picture of Rowland Duru"
+            />
+          </div>
         </section>
         <section class="card"><h2>Qualifications</h2></section>
       </div>
     </main>
     <footer>
       <p>&copy; <span id="currentyear"></span>Duru Rowland | Nigeria</p>
-      <p id="lastModified"></p>
+      <p id="lastModified">Last modified:</p>
     </footer>
   </body>
 </html>
