@@ -1,3 +1,11 @@
+:root {
+  --primary-color: darkslateblue;
+  --secondary-color: aliceblue;
+  --text-color: #000;
+  --border-color: #000;
+  --max-content-width: 1000px;
+}
+
 *,
 *::before,
 *::after {
@@ -12,6 +20,7 @@ body {
   display: grid;
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
+  color: var(--text-color);
 }
 
 h1 {
@@ -27,21 +36,21 @@ h2 {
 }
 
 header {
-  background-color: aliceblue;
+  background-color: var(--secondary-color);
 }
 
 header span {
   display: block;
   text-align: center;
   font-weight: 300;
-  background-color: darkslateblue;
-  color: aliceblue;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
   font-size: 2rem;
   padding: 1.5rem;
 }
 
 nav {
-  background-color: black;
+  background-color: var(--text-color);
 }
 
 nav ul {
@@ -58,78 +67,79 @@ nav a {
   text-align: center;
   text-decoration: none;
   font-weight: 300;
-  color: aliceblue;
+  color: var(--secondary-color);
   font-size: 1.2rem;
   padding: 1rem;
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease;
 }
 
 nav a:hover {
-  background: aliceblue;
-  color: black;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+}
+
+main {
+  width: 90%;
+  max-width: var(--max-content-width);
+  margin: 0 auto 10px;
 }
 
 .card-grid {
   display: grid;
-  grid-template-columns: auto minmax(200px, 30%);
-  column-gap: 15px;
-  max-width: 1000px;
-  width: 90%;
-  margin: auto;
-  margin: 0 auto;
+  grid-template-columns: 2fr 1fr;
+  gap: 15px;
 }
 
 .card {
-  border: 2px solid black;
+  border: 2px solid var(--border-color);
   border-radius: 10px;
+  overflow: hidden;
 }
 
-section h2 {
+.card h2 {
   text-align: center;
-  background-color: darkslateblue;
-  color: aliceblue;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
   padding: 0.8rem;
-}
-
-footer {
-  background-color: darkslateblue;
-  color: aliceblue;
-  text-align: center;
-  padding: 0.8rem;
-  font-weight: 300;
-  font-size: 1.2rem;
-  margin-top: 10px;
 }
 
 .inner-flex {
   display: flex;
+  align-items: flex-start;
 }
 
 .inner-flex img {
   width: 150px;
-  height: 100%;
+  height: auto;
   padding: 15px;
   border-radius: 10px;
 }
 
 .inner-flex p,
 .card ul {
-  padding: 15px 5px 15px 15px;
+  padding: 15px;
   font-weight: 400;
-  color: black;
+}
+
+.card ul {
+  padding-left: 2.5rem;
+}
+
+.card ul li {
+  padding: 0.5rem 0;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  text-align: center;
+  padding: 0.8rem;
+  font-weight: 300;
+  font-size: 1.2rem;
 }
 
 #lastModified {
   margin-top: 0.3rem;
-}
-
-.card ul {
-  padding: 2.5rem;
-}
-
-.card ul li {
-  padding: 0.5rem;
-}
-
-main {
-  margin-bottom: 10px;
 }
