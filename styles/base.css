@@ -23,6 +23,10 @@ h2 {
   font-weight: 300;
 }
 
+header {
+  background-color: aliceblue;
+}
+
 header span {
   display: block;
   text-align: center;
@@ -122,4 +126,8 @@ footer {
 
 .card ul li {
   padding: 0.5rem;
+}
+
+main {
+  margin-bottom: 10px;
 }
