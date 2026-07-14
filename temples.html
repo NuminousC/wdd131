@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Responsive temple photo album created for WDD 131 Dynamic Web Fundamentals by Duru Rowland."
+    />
+    <meta name="author" content="Duru Rowland" />
+    <title>Temple Album | WDD 131 - Duru Rowland</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles/temples.css" />
+
+    <link
+      rel="stylesheet"
+      href="styles/temples-large.css"
+      media="(min-width: 768px)"
+    />
+
+    <script src="scripts/temples.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="site-title">Temple Album</h1>
+      <button
+        id="hamburger"
+        class="hamburger"
+        aria-label="Toggle navigation"
+        aria-expanded="true"
+        aria-controls="nav-menu"
+      >
+        ☰
+      </button>
+      <nav id="nav-menu" class="nav-menu">
+        <a href="#">Home</a>
+        <a href="#">Old</a>
+        <a href="#">New</a>
+        <a href="#">Large</a>
+        <a href="#">Small</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>My Favorite Temples</h1>
+
+      <section class="grid-container">
+        <figure>
+          <img
+            src="images/salt-lake-temple.jpg"
+            alt="Salt Lake Temple"
+            loading="lazy"
+            width="600"
+            height="400"
+          />
+          <figcaption>Salt Lake Temple, Utah</figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="images/salt-lake-temple.jpg"
+            alt="Provo City Center Temple"
+            loading="lazy"
+            width="600"
+            height="400"
+          />
+          <figcaption>Provo City Center Temple, Utah</figcaption>
+        </figure>
+
+        <!-- Temple 3 -->
+        <figure>
+          <img
+            src="images/salt-lake-temple.jpg"
+            alt="Washington D.C. Temple"
+            loading="lazy"
+            width="600"
+            height="400"
+          />
+          <figcaption>Washington D.C. Temple</figcaption>
+        </figure>
+
+        <!-- Temple 4 -->
+        <figure>
+          <img
+            src="images/salt-lake-temple.jpg"
+            alt="Rome Italy Temple"
+            loading="lazy"
+            width="600"
+            height="400"
+          />
+          <figcaption>Rome Italy Temple</figcaption>
+        </figure>
+
+        <!-- Temple 5 -->
+        <figure>
+          <img
+            src="images/salt-lake-temple.jpg"
+            alt="San Diego California Temple"
+            loading="lazy"
+            width="600"
+            height="400"
+          />
+          <figcaption>San Diego California Temple</figcaption>
+        </figure>
+
+        <!-- Temple 6 -->
+        <figure>
+          <img
+            src="images/salt-lake-temple.jpg"
+            alt="Manti Utah Temple"
+            loading="lazy"
+            width="600"
+            height="400"
+          />
+          <figcaption>Manti Utah Temple</figcaption>
+        </figure>
+
+        <!-- Temple 7 -->
+        <figure>
+          <img
+            src="images/salt-lake-temple.jpg"
+            alt="Nauvoo Illinois Temple"
+            loading="lazy"
+            width="600"
+            height="400"
+          />
+          <figcaption>Nauvoo Illinois Temple</figcaption>
+        </figure>
+
+        <!-- Temple 8 -->
+        <figure>
+          <img
+            src="images/salt-lake-temple.jpg"
+            alt="Kirtland Ohio Temple"
+            loading="lazy"
+            width="600"
+            height="400"
+          />
+          <figcaption>Kirtland Temple, Ohio</figcaption>
+        </figure>
+
+        <!-- Temple 9 -->
+        <figure>
+          <img
+            src="images/salt-lake-temple.jpg"
+            alt="Palmyra New York Temple"
+            loading="lazy"
+            width="600"
+            height="400"
+          />
+          <figcaption>Palmyra New York Temple</figcaption>
+        </figure>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="current-year"></span> Duru Rowland • Nigeria</p>
+      <p>Last Modified: <span id="last-modified"></span></p>
+    </footer>
+  </body>
+</html>
