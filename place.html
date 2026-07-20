@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Nigeria | WDD 131 Country Page | Duru Rowland</title>
+
+    <meta
+      name="description"
+      content="Discover Nigeria featuring Zuma Rock. WDD131 Country Page by Rowland Duru."
+    />
+
+    <meta name="author" content="Rowland Duru" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles/place.css" />
+    <link
+      rel="stylesheet"
+      href="styles/place-large.css"
+      media="(min-width:768px)"
+    />
+
+    <script src="scripts/place.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>Nigeria</h1>
+    </header>
+
+    <main>
+      <picture>
+        <source
+          srcset="images/zuma-rock-large.webp"
+          media="(min-width:768px)"
+        />
+
+        <img
+          src="images/zuma-rock-small.webp"
+          alt="Zuma Rock in Nigeria"
+          width="1200"
+          height="700"
+        />
+      </picture>
+
+      <section class="data">
+        <h2>Data</h2>
+
+        <ul>
+          <li><strong>Capital:</strong> Abuja</li>
+
+          <li><strong>Population:</strong> 223 Million</li>
+
+          <li><strong>Area:</strong> 923,768 km²</li>
+
+          <li><strong>Language:</strong> English</li>
+
+          <li><strong>Currency:</strong> Naira (₦)</li>
+        </ul>
+      </section>
+
+      <section class="weather">
+        <h2>Weather</h2>
+
+        <img
+    src="images/weather.svg"
+    alt="Partly cloudy weather icon"
+    width="48"
+    height="48">
+
+        <ul>
+          <li>
+            <strong>Temperature:</strong> <span id="temperature">29</span> °C
+          </li>
+
+          <li><strong>Conditions:</strong> Sunny</li>
+
+          <li><strong>Wind:</strong> <span id="wind">10</span> km/h</li>
+
+          <li><strong>Humidity:</strong> 68%</li>
+
+          <li><strong>Wind Chill:</strong> <span id="windchill"></span></li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        ©
+        <span id="currentyear"></span>
+        Rowland Duru | Nigeria
+      </p>
+
+      <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>
