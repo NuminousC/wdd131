@@ -1,35 +1,33 @@
+@media screen and (min-width: 768px) {
+
 main {
-  position: relative;
+    position: relative;
 }
 
 .data {
-  position: absolute;
-
-  top: 20px;
-
-  left: 10px;
-
-  width: 280px;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    width: 280px;
 }
 
 .weather {
-  position: absolute;
-
-  right: 10px;
-
-  bottom: 20px;
-
-  width: 280px;
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+    width: 280px;
 }
 
 .weather-icon {
-  display: none;
+    display: none;
+}
+
+.weather img {
+    display: none;
 }
 
 .weather h2::after {
-  content: " ⛅";
+    content: " ⛅";
 }
 
-.weather img{
-    display:none;
 }
