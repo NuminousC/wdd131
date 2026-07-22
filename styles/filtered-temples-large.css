@@ -1,0 +1,39 @@
+@media (min-width: 768px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+
+  .site-title {
+    margin-bottom: 0;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .nav-menu {
+    display: flex !important;
+    flex-direction: row;
+    width: auto;
+    margin-top: 0;
+    gap: 1.5rem;
+  }
+
+  .nav-menu a {
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+  }
+
+  main {
+    padding: 0 2rem;
+  }
+}
