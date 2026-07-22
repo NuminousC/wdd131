@@ -93,7 +93,7 @@ function displayTemples(temples) {
 
     card.innerHTML = `
 <img src="${temple.imageUrl}"
-alt="${temple.templeName}"
+alt="${temple.templeName}" width="400" height="250"
 loading="lazy">
 
 <figcaption>
